@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["css/app.css","e4aa30c8b84c90bb543372696fc81866"],["images/card-bg.png","a998e081458167111888b9e885091f19"],["index.html","71661bdcb9dfb0781258086c55dc85dc"],["js/app.js","10b7990d6316890b47b076220884e726"],["vendor/jquery/js/jquery.min.js","c9f5aeeca3ad37bf2aa006139b935f0a"],["vendor/materialize/css/materialize.min.css","8f5c6949be948d6aed6ee7a73ac92db5"],["vendor/materialize/js/materialize.min.js","0e2bd6ea55828250fd3ebf2b4fc3a40f"]];
+var precacheConfig = [["css/app.css","e4aa30c8b84c90bb543372696fc81866"],["images/card-bg.png","a998e081458167111888b9e885091f19"],["index.html","9a69a7b910d5e9dc1466210748c23dd1"],["js/app.js","d1dd53130bee43b7abef47187644bab1"],["vendor/jquery/js/jquery.min.js","c9f5aeeca3ad37bf2aa006139b935f0a"],["vendor/materialize/css/materialize.min.css","8f5c6949be948d6aed6ee7a73ac92db5"],["vendor/materialize/fonts/roboto/Roboto-Bold.woff","eed9aab5449cc9c8430d7d258108f602"],["vendor/materialize/fonts/roboto/Roboto-Bold.woff2","c0f1e4a4fdfb8048c72e86aadb2a247d"],["vendor/materialize/fonts/roboto/Roboto-Light.woff","ea36cd9a0e9eee97012a67b8a4570d7b"],["vendor/materialize/fonts/roboto/Roboto-Light.woff2","3c37aa69cd77e6a53a067170fa8fe2e9"],["vendor/materialize/fonts/roboto/Roboto-Medium.woff","cf4d60bc0b1d4b2314085919a00e1724"],["vendor/materialize/fonts/roboto/Roboto-Medium.woff2","1561b424aaef2f704bbd89155b3ce514"],["vendor/materialize/fonts/roboto/Roboto-Regular.woff","3cf6adf61054c328b1b0ddcd8f9ce24d"],["vendor/materialize/fonts/roboto/Roboto-Regular.woff2","5136cbe62a63604402f2fedb97f246f8"],["vendor/materialize/fonts/roboto/Roboto-Thin.woff","44b78f142603eb69f593ed4002ed7a4a"],["vendor/materialize/fonts/roboto/Roboto-Thin.woff2","1f35e6a11d27d2e10d28946d42332dc5"],["vendor/materialize/js/materialize.min.js","0e2bd6ea55828250fd3ebf2b4fc3a40f"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v6"}});
+toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v7"}});
 
 
 

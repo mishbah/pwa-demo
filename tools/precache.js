@@ -1,10 +1,11 @@
-const name = 'scotchPWA-v6'
+const name = 'scotchPWA-v7'
 module.exports = {
   staticFileGlobs: [
     './index.html',
     './images/*.{png,svg,gif,jpg}',
     './fonts/**/*.{woff,woff2}',
     './vendor/**/fonts/*.{woff,woff2}',
+    './vendor/**/fonts/**/*.{woff,woff2}',
     './vendor/**/js/*.min.js',
     './vendor/**/css/*.min.css',
     './js/*.js',
