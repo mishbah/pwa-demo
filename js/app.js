@@ -48,6 +48,7 @@
     .then(function(trends) {
       console.log('From server...')
       app.updateTrends(trends.items)
+      networkReturned = true;
     }).catch(function(err) {
       // Error
     });
@@ -83,8 +84,8 @@
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-     .register('/service-worker.js')
-     .then(function() {
+      .register('service-worker.js')
+      .then(function() {
         console.log('Service Worker Registered');
       });
   }
