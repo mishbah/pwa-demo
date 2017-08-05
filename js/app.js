@@ -29,14 +29,14 @@
   }
 
   app.getTrends = function() {
-    const networkReturned = false;
+    let networkReturned = false;
     if ('caches' in window) {
       caches.match(app.apiURL).then(function(response) {
         if (response) {
           response.json().then(function(trends) {
             console.log('From cache...')
             if(!networkReturned) {
-              app.updateTrends(trends);
+              app.updateTrends(trends.items);
             }
           });
         }
@@ -50,7 +50,7 @@
       app.updateTrends(trends.items)
       networkReturned = true;
     }).catch(function(err) {
-      // Error
+      // Error :(
     });
   }
 

@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["css/app.css","e4aa30c8b84c90bb543372696fc81866"],["images/card-bg.png","a998e081458167111888b9e885091f19"],["index.html","71e9de20ad47047fb85acbedf2231391"],["js/app.js","3ec14e8c898178f5fbfb9d36b657e086"],["vendor/jquery/js/jquery.min.js","c9f5aeeca3ad37bf2aa006139b935f0a"],["vendor/materialize/css/materialize.min.css","8f5c6949be948d6aed6ee7a73ac92db5"],["vendor/materialize/js/materialize.min.js","0e2bd6ea55828250fd3ebf2b4fc3a40f"]];
+var precacheConfig = [["css/app.css","e4aa30c8b84c90bb543372696fc81866"],["images/card-bg.png","a998e081458167111888b9e885091f19"],["index.html","71e9de20ad47047fb85acbedf2231391"],["js/app.js","10b7990d6316890b47b076220884e726"],["vendor/jquery/js/jquery.min.js","c9f5aeeca3ad37bf2aa006139b935f0a"],["vendor/materialize/css/materialize.min.css","8f5c6949be948d6aed6ee7a73ac92db5"],["vendor/materialize/js/materialize.min.js","0e2bd6ea55828250fd3ebf2b4fc3a40f"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -285,7 +285,7 @@ self.addEventListener('fetch', function(event) {
 
 // Runtime cache configuration, using the sw-toolbox library.
 
-toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v3"}});
+toolbox.router.get(/https:\/\/api\.github\.com\/search\/repositories/, toolbox.networkFirst, {"cache":{"name":"scotchPWA-v6"}});
 
 
 

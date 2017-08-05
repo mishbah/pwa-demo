@@ -1,4 +1,4 @@
-const name = 'scotchPWA-v3'
+const name = 'scotchPWA-v6'
 module.exports = {
   staticFileGlobs: [
     './index.html',
